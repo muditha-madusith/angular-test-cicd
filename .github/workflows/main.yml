@@ -27,8 +27,8 @@ jobs:
       with:
         push: true
         tags: |
-          ${{ secrets.DOCKER_USERNAME }}/nodejs-app:latest
-          ${{ secrets.DOCKER_USERNAME }}/nodejs-app:${{ github.sha }}
+          ${{ secrets.DOCKER_USERNAME }}/angular-app:latest
+          ${{ secrets.DOCKER_USERNAME }}/angular-app:${{ github.sha }}
 
   deploy:
    runs-on: ubuntu-latest
